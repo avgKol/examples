@@ -14,6 +14,4 @@ class MyUser(HttpUser):
     def vote(self):
         voter_id = uuid4().hex
         vote = "a" if (random.uniform(0, 1) < CAT_FRACTION) else "b"
-        self.client.post("/",
-                         cookies={"voter_id": voter_id},
-                         data={"vote": vote})
+        self.client.get("/")
