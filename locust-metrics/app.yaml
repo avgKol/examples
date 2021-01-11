@@ -7,7 +7,7 @@ metadata:
 # This is roughly the same as a Kustomize resources block, so you can use files,
 # directories, URLs, Git repos, etc.
 resources:
-- https://github.com/thestormforge/examples/voting-webapp/application
+- https://github.com/avgKol/examples/tree/master/my-nginx/application
 
 # This section configures the objectives of optimization
 # We want to minimize both cost and latency
@@ -20,9 +20,9 @@ objectives:
 # Here we decide to only optimize the voting service respon
 parameters:
   containerResources:
-    labelSelector: component=voting-service
+    labelSelector: run=my-nginx
   replicas:
-    labelSelector: component=voting-service
+    labelSelector: run=my-nginx
 
 # This section configures the scenarios of load generation
 scenarios:
