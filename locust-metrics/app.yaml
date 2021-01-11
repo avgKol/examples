@@ -1,7 +1,7 @@
 apiVersion: apps.redskyops.dev/v1alpha1
 kind: Application
 metadata:
-  name: votingapp
+  name: nginxapp
 
 # The resources identify where the manifests representing the application live.
 # This is roughly the same as a Kustomize resources block, so you can use files,
