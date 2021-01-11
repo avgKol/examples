@@ -1,3 +1,3 @@
-# BGINX Example
+# NGINX Example
 
 ## Introduction
