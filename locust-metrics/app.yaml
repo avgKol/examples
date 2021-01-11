@@ -7,7 +7,7 @@ metadata:
 # This is roughly the same as a Kustomize resources block, so you can use files,
 # directories, URLs, Git repos, etc.
 resources:
-- https://github.com/avgKol/examples/tree/master/my-nginx/application
+- https://github.com/avgKol/examples/my-nginx/application
 
 # This section configures the objectives of optimization
 # We want to minimize both cost and latency
