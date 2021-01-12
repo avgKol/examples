@@ -31,7 +31,7 @@ spec:
     query: scalar(p95{job="trialRun",instance="{{ .Trial.Name }}"})
     type: prometheus
   parameters: 
-  - name: voting_cpu
+  - name: nginx_cpu
     min: 100
     max: 1000
     baseline: 400
